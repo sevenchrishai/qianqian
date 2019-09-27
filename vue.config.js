@@ -1,6 +1,6 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-        ? '/qianqian/'
+        ? '/qianqian/dist/'
         : '/',
     devServer: {
         port: '2278',
