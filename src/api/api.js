@@ -5,7 +5,7 @@ import api_host from '@/api'
 // 定义axios基本设置
 const request = axios.create({
     baseURL: api_host,
-    timeout: 3000,//请求超时时间
+    timeout: 30000,//请求超时时间
 })
 
 // 添加请求拦截器
