@@ -8,7 +8,7 @@
                     by
                     <a href="javascript:void(0)">芊芊</a>|
                     <a target="_blank" href="https://weibo.com/u/3126062800">其实然也其实未然</a>|
-                    <a target="_blank" href="https://github.com/sevenchrishai"> sevenchrishai</a>|
+                    <a target="_blank" href="https://github.com/sevenchrishai/qianqian"> sevenchrishai</a>|
                 </span>
                 <span class="dash"></span>
             </p>
