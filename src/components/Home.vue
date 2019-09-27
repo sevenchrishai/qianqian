@@ -13,8 +13,8 @@
                 <span class="dash"></span>
             </p>
             <p class="by">
-                <a class="aToken" target="_blank" href="javascript:void(0)" @click="getAccessToken">点击获取access_token</a>
-                <el-input type="hidden" class="token" v-model="token" placeholder="粘贴获取的access_token"></el-input>
+                <a class="aToken" target="_blank" href="javascript:void(0)" @click.prevent="getAccessToken">点击获取access_token</a>
+                <el-input type="text" class="token" v-model="token" placeholder="access_token"></el-input>
             </p>
         </div>
         <div class="picUploadList">
@@ -90,7 +90,8 @@
                         type: 'success',
                         center: true,
                         offset: 150,
-                        duration: 3000
+                        duration: 1000,
+                        showClose: true
                     });
                 })
             },
