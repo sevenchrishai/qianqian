@@ -85,6 +85,13 @@
             getAccessToken() {
                 http().getAccessToken().then(res => {
                     this.token = res.access_token;
+                    this.$message({
+                        message: '获取access_token成功',
+                        type: 'success',
+                        center: true,
+                        offset: 150,
+                        duration: 3000
+                    });
                 })
             },
             requestData(){
