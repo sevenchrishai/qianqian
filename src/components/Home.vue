@@ -12,6 +12,10 @@
                 </span>
                 <span class="dash"></span>
             </p>
+            <p class="by">
+                <a class="aToken" target="_blank" :href="tokenUrl">点击获取access_token</a>
+                <el-input class="token" v-model="token" placeholder="粘贴获取的access_token"></el-input>
+            </p>
         </div>
         <div class="picUploadList">
             <el-upload
@@ -23,7 +27,7 @@
                     :on-change="getFile"
                     :on-remove="getFile"
                     :file-list="fileList">
-                <el-button size="small" type="primary" icon="el-icon-upload">点击上传</el-button>
+                <el-button size="small" type="primary" icon="el-icon-upload">点击上传图片</el-button>
                 <div slot="tip" class="el-upload__tip">只能上传jpg/png/bmp文件，且不超过500kb</div>
             </el-upload>
 
@@ -50,11 +54,13 @@
 <script>
     /* eslint-disable */
     import http from '@/api/api'
+    import urls from '@/api/url'
 
     export default {
         name: 'home',
         data() {
             return {
+                tokenUrl: 'https://aip.baidubce.com' + urls.access_token,
                 token: '',
                 templateSign: 'aba01721b7261633127622aa8c7c57cd',
                 fileList: [],
@@ -69,7 +75,7 @@
             }
         },
         created() {
-            this.getAccessToken();
+            // this.getAccessToken();
         },
         mounted() {
         },
