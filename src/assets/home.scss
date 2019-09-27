@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+$color-green: #64CB9C;
+$color-purple: #AB65F2;
+$color-yellow: #FFCD42;
+$color-red: #E46365;
+h2{
+  color: $color-green;
+}
+.by{
+  font-size: 80%;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: $color-green;
+  .dash{
+    display: inline-block;
+    width: 20%;
+    margin: 0 10px 3px;
+    border-bottom: 1px dotted $color-green;
+  }
+  .dash:after{
+    height:1px;content:'';display:block;border-top:1px dotted $color-green;
+  }
+  a{
+    color: $color-green;
+    padding: 0 5px;
+  }
+}
+hr{
+  border: 1px dashed $color-green;
+}
+.picUploadList{
+  margin: 30px;
+  padding: 0 10px;
+  overflow: hidden;
+
+}
+.run{
+  margin: 50px auto;
+}
+.table{
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  .el-table{
+
+  }
+}
